@@ -8,5 +8,8 @@ public class ModDamageEnchantment extends DamageEnchantment {
         super(pRarity, pType, pApplicableSlots);
     }
 
-    
+    @Override
+    public int getMaxLevel() {
+        return 4;
+    }
 }
