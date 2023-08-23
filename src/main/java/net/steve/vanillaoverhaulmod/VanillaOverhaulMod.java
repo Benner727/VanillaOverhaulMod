@@ -1,6 +1,7 @@
 package net.steve.vanillaoverhaulmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -11,7 +12,10 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.steve.vanillaoverhaulmod.block.ModBlocks;
 import net.steve.vanillaoverhaulmod.enchantment.ModEnchantments;
+import net.steve.vanillaoverhaulmod.screen.ModMenuTypes;
+import net.steve.vanillaoverhaulmod.screen.ModEnchantmentScreen;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -31,7 +35,9 @@ public class VanillaOverhaulMod
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModBlocks.register(modEventBus);
         ModEnchantments.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -62,6 +68,7 @@ public class VanillaOverhaulMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            MenuScreens.register(ModMenuTypes.MOD_ENCHANTMENT_MENU.get(), ModEnchantmentScreen::new);
         }
     }
 }
