@@ -14,6 +14,7 @@ public class ModEnchantments {
 
     private static final EquipmentSlot[] ARMOR_SLOTS = new EquipmentSlot[]{EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET};
     public static RegistryObject<Enchantment> MENDING = VANILLA_ENCHANTMENTS.register("mending", () -> new ModMendingEnchantment(Enchantment.Rarity.RARE, EquipmentSlot.values()));
+    public static RegistryObject<Enchantment> BLOCK_FORTUNE = VANILLA_ENCHANTMENTS.register("fortune", () -> new ModFortuneEnchantment(Enchantment.Rarity.RARE, EnchantmentCategory.DIGGER, EquipmentSlot.MAINHAND));
     public static RegistryObject<Enchantment> ALL_DAMAGE_PROTECTION = VANILLA_ENCHANTMENTS.register("protection", () -> new ModProtectionEnchantment(Enchantment.Rarity.COMMON, ProtectionEnchantment.Type.ALL, ARMOR_SLOTS));
     public static RegistryObject<Enchantment> FIRE_DAMAGE_PROTECTION = VANILLA_ENCHANTMENTS.register("fire_protection", () -> new ModProtectionEnchantment(Enchantment.Rarity.UNCOMMON, ProtectionEnchantment.Type.FIRE, ARMOR_SLOTS));
     public static RegistryObject<Enchantment> BLAST_DAMAGE_PROTECTION = VANILLA_ENCHANTMENTS.register("blast_protection", () -> new ModProtectionEnchantment(Enchantment.Rarity.RARE, ProtectionEnchantment.Type.EXPLOSION, ARMOR_SLOTS));
