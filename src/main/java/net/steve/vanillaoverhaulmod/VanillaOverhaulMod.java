@@ -36,7 +36,6 @@ public class VanillaOverhaulMod
         ModEnchantments.register(modEventBus);
         ModMenuTypes.register(modEventBus);
 
-
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
