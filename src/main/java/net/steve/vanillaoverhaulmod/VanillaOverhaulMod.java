@@ -14,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.steve.vanillaoverhaulmod.block.ModBlocks;
 import net.steve.vanillaoverhaulmod.enchantment.ModEnchantments;
+import net.steve.vanillaoverhaulmod.item.ModItems;
 import net.steve.vanillaoverhaulmod.screen.ModMenuTypes;
 import net.steve.vanillaoverhaulmod.screen.ModEnchantmentScreen;
 import org.slf4j.Logger;
@@ -33,6 +34,8 @@ public class VanillaOverhaulMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModBlocks.register(modEventBus);
+        ModItems.register(modEventBus);
+
         ModEnchantments.register(modEventBus);
         ModMenuTypes.register(modEventBus);
 
