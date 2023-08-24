@@ -32,18 +32,19 @@ public class VanillaOverhaulMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        // Register the commonSetup method for modloading
-        modEventBus.addListener(this::commonSetup);
-
         ModBlocks.register(modEventBus);
         ModEnchantments.register(modEventBus);
         ModMenuTypes.register(modEventBus);
 
-        // Register ourselves for server and other game events we are interested in
-        MinecraftForge.EVENT_BUS.register(this);
+
+        // Register the commonSetup method for modloading
+        modEventBus.addListener(this::commonSetup);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
+        // Register ourselves for server and other game events we are interested in
+        MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
