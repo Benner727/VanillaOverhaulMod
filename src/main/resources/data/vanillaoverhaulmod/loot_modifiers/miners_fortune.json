@@ -1,0 +1,11 @@
+{
+  "conditions": [
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "tag": "minecraft:pickaxes"
+      }
+    }
+  ],
+  "type": "vanillaoverhaulmod:miners_fortune"
+}

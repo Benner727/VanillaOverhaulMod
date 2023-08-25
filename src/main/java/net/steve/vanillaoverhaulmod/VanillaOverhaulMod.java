@@ -15,6 +15,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.steve.vanillaoverhaulmod.block.ModBlocks;
 import net.steve.vanillaoverhaulmod.enchantment.ModEnchantments;
 import net.steve.vanillaoverhaulmod.item.ModItems;
+import net.steve.vanillaoverhaulmod.loot.ModLootModifiers;
 import net.steve.vanillaoverhaulmod.screen.ModMenuTypes;
 import net.steve.vanillaoverhaulmod.screen.ModEnchantmentScreen;
 import org.slf4j.Logger;
@@ -38,6 +39,8 @@ public class VanillaOverhaulMod
 
         ModEnchantments.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
