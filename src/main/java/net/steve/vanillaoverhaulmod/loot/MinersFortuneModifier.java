@@ -36,17 +36,19 @@ public class MinersFortuneModifier extends LootModifier {
             if (isFortunable(context.getParam(LootContextParams.BLOCK_STATE))) {
                 Entity player = context.getParamOrNull(LootContextParams.THIS_ENTITY);
 
-                int playerLevel = ((Player) player).experienceLevel;
-                int lootModifier = getLootModifier(playerLevel, context.getRandom().nextFloat());
+                if (player != null) {
+                    int playerLevel = ((Player) player).experienceLevel;
+                    int lootModifier = getLootModifier(playerLevel, context.getRandom().nextFloat());
 
-                for (int i = 1; i < lootModifier; i++) {
-                    ObjectArrayList<ItemStack> bonusLoot = new ObjectArrayList<ItemStack>();
+                    for (int i = 1; i < lootModifier; i++) {
+                        ObjectArrayList<ItemStack> bonusLoot = new ObjectArrayList<ItemStack>();
 
-                    for (ItemStack itemStack : generatedLoot) {
-                        bonusLoot.add(itemStack);
+                        for (ItemStack itemStack : generatedLoot) {
+                            bonusLoot.add(itemStack);
+                        }
+
+                        generatedLoot.addAll(bonusLoot);
                     }
-
-                    generatedLoot.addAll(bonusLoot);
                 }
             }
         }
@@ -66,22 +68,12 @@ public class MinersFortuneModifier extends LootModifier {
         int lootModifier = 1;
 
         int fortuneLevel = Math.floorDiv(playerLevel, 20);
-        switch(fortuneLevel) {
-            case 1:
-                lootModifier = getFortuneOneModifier(lootRoll);
-                break;
-            case 2:
-                lootModifier = getFortuneTwoModifier(lootRoll);
-                break;
-            case 3:
-                lootModifier = getFortuneThreeModifier(lootRoll);
-                break;
-            case 4:
-                lootModifier = getFortuneFourModifier(lootRoll);
-                break;
-            case 5:
-                lootModifier = getFortuneFiveModifier(lootRoll);
-                break;
+        switch (fortuneLevel) {
+            case 1 -> lootModifier = getFortuneOneModifier(lootRoll);
+            case 2 -> lootModifier = getFortuneTwoModifier(lootRoll);
+            case 3 -> lootModifier = getFortuneThreeModifier(lootRoll);
+            case 4 -> lootModifier = getFortuneFourModifier(lootRoll);
+            case 5 -> lootModifier = getFortuneFiveModifier(lootRoll);
         }
 
         return lootModifier;

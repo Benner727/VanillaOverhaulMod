@@ -8,11 +8,15 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.steve.vanillaoverhaulmod.block.ModBlocks;
+import net.steve.vanillaoverhaulmod.config.VanillaOverhaulModClientConfigs;
+import net.steve.vanillaoverhaulmod.config.VanillaOverhaulModCommonConfigs;
 import net.steve.vanillaoverhaulmod.enchantment.ModEnchantments;
 import net.steve.vanillaoverhaulmod.item.ModItems;
 import net.steve.vanillaoverhaulmod.loot.ModLootModifiers;
@@ -41,6 +45,9 @@ public class VanillaOverhaulMod
         ModMenuTypes.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, VanillaOverhaulModClientConfigs.SPEC, "vanillaoverhaulmod-client.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, VanillaOverhaulModCommonConfigs.SPEC, "vanillaoverhaulmod-common.toml");
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
