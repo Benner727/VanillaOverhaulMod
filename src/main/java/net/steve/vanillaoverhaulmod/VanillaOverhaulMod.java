@@ -18,6 +18,7 @@ import net.steve.vanillaoverhaulmod.block.ModBlocks;
 import net.steve.vanillaoverhaulmod.config.VanillaOverhaulModClientConfigs;
 import net.steve.vanillaoverhaulmod.config.VanillaOverhaulModCommonConfigs;
 import net.steve.vanillaoverhaulmod.enchantment.ModEnchantments;
+import net.steve.vanillaoverhaulmod.entity.ModEntities;
 import net.steve.vanillaoverhaulmod.item.ModItems;
 import net.steve.vanillaoverhaulmod.loot.ModLootModifiers;
 import net.steve.vanillaoverhaulmod.screen.ModMenuTypes;
@@ -45,6 +46,8 @@ public class VanillaOverhaulMod
         ModMenuTypes.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
+
+        ModEntities.register(modEventBus);
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, VanillaOverhaulModClientConfigs.SPEC, "vanillaoverhaulmod-client.toml");
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, VanillaOverhaulModCommonConfigs.SPEC, "vanillaoverhaulmod-common.toml");

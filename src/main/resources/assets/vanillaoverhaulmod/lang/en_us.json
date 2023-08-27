@@ -1,3 +1,5 @@
 {
-  "container.enchant.diamond.one": "1 Diamond"
+  "container.enchant.diamond.one": "1 Diamond",
+  "entity.vanillaoverhaulmod.test_entity": "Test Entity",
+  "item.vanillaoverhaulmod.test_spawn_egg": "Test Spawn Egg"
 }

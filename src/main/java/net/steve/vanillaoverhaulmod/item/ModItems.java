@@ -1,14 +1,19 @@
 package net.steve.vanillaoverhaulmod.item;
 
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.steve.vanillaoverhaulmod.VanillaOverhaulMod;
+import net.steve.vanillaoverhaulmod.entity.ModEntities;
 
 public class ModItems {
     public static final DeferredRegister<Item> VANILLA_ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, "minecraft");
+    public static final DeferredRegister<Item> MOD_ITEMS =
+            DeferredRegister.create(ForgeRegistries.ITEMS, VanillaOverhaulMod.MOD_ID);
 
     // Iron tools
     public static final RegistryObject<Item> IRON_SWORD = VANILLA_ITEMS.register("iron_sword", () -> new SwordItem(ModTiers.MOD_IRON, 3, -2.4F, new Item.Properties()));
@@ -65,7 +70,12 @@ public class ModItems {
     // Other
     public static final RegistryObject<Item> ELYTRA = VANILLA_ITEMS.register("elytra", () -> new ElytraItem((new Item.Properties()).durability(1000).rarity(Rarity.UNCOMMON)));
 
+    // Mod
+    public static final RegistryObject<ForgeSpawnEggItem> TEST_SPAWN_EGG = MOD_ITEMS.register("test_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.EXAMPLE_ENTITY, 0xF0ABD1, 0xAE4C82, new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         VANILLA_ITEMS.register(eventBus);
+        MOD_ITEMS.register(eventBus);
     }
 }
