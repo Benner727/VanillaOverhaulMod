@@ -1,5 +1,6 @@
 package net.steve.vanillaoverhaulmod.screen;
 
+import net.minecraft.world.inventory.AnvilMenu;
 import net.steve.vanillaoverhaulmod.VanillaOverhaulMod;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
@@ -16,6 +17,9 @@ public class ModMenuTypes {
 
     public static final RegistryObject<MenuType<ModEnchantmentMenu>> MOD_ENCHANTMENT_MENU =
             registerMenuType(ModEnchantmentMenu::new, "mod_enchantment_menu");
+
+    public static final RegistryObject<MenuType<ModAnvilMenu>> MOD_ANVIL_MENU =
+            registerMenuType(ModAnvilMenu::new, "mod_anvil_menu");
 
     private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory,
                                                                                                   String name) {

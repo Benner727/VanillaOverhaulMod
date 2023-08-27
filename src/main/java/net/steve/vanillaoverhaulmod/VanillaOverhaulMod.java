@@ -23,6 +23,7 @@ import net.steve.vanillaoverhaulmod.item.ModItems;
 import net.steve.vanillaoverhaulmod.loot.ModLootModifiers;
 import net.steve.vanillaoverhaulmod.screen.ModMenuTypes;
 import net.steve.vanillaoverhaulmod.screen.ModEnchantmentScreen;
+import net.steve.vanillaoverhaulmod.screen.ModAnvilScreen;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -85,6 +86,7 @@ public class VanillaOverhaulMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             MenuScreens.register(ModMenuTypes.MOD_ENCHANTMENT_MENU.get(), ModEnchantmentScreen::new);
+            MenuScreens.register(ModMenuTypes.MOD_ANVIL_MENU.get(), ModAnvilScreen::new);
         }
     }
 }
