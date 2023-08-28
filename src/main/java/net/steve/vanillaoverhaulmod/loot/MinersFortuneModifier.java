@@ -67,7 +67,7 @@ public class MinersFortuneModifier extends LootModifier {
     private int getLootModifier(int playerLevel, float lootRoll) {
         int lootModifier = 1;
 
-        int fortuneLevel = Math.floorDiv(playerLevel, 20);
+        int fortuneLevel = Math.floorDiv(Math.max(playerLevel, 100), 20);
         switch (fortuneLevel) {
             case 1 -> lootModifier = getFortuneOneModifier(lootRoll);
             case 2 -> lootModifier = getFortuneTwoModifier(lootRoll);

@@ -1,0 +1,30 @@
+{
+  "villager_trades": [
+    {
+      "profession": "librarian",
+      "level": 1,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "iron_ore",
+            "give_amount": 5,
+            "take": "iron_ingot",
+            "take_amount": 3
+          }
+        },
+        {
+          "type": "EnchantBookForLapis",
+          "values": {
+            "name": "efficiency",
+            "level": 5
+          }
+        },
+        {
+          "type": "RandomEnchantBookForLapis",
+          "values": {}
+        }
+      ]
+    }
+  ]
+}
