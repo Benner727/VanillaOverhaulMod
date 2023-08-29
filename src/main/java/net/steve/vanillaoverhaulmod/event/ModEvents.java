@@ -96,12 +96,36 @@ public class ModEvents {
 
     @SubscribeEvent
     public static void onBlockBreak(BlockEvent.BreakEvent event) {
-        System.out.println(event.getState().getBlock().getName());
-
         Player player = event.getPlayer();
+        String block = event.getState().getBlock().getDescriptionId();
 
-        if (event.getState().getBlock().equals(Block.byItem(Items.REDSTONE_ORE))) {
-            player.giveExperiencePoints(100);
+        switch (block) {
+            case "block.minecraft.stone" ->
+                    player.giveExperiencePoints(VanillaOverhaulModCommonConfigs.STONE_EXP.get());
+            case "block.minecraft.deepslate" ->
+                    player.giveExperiencePoints(VanillaOverhaulModCommonConfigs.DEEPSLATE_EXP.get());
+            case "block.minecraft.coal_ore", "block.minecraft.deepslate_coal_ore" ->
+                    player.giveExperiencePoints(VanillaOverhaulModCommonConfigs.COAL_ORE_EXP.get());
+            case "block.minecraft.copper_ore", "block.minecraft.deepslate_copper_ore" ->
+                    player.giveExperiencePoints(VanillaOverhaulModCommonConfigs.COPPER_ORE_EXP.get());
+            case "block.minecraft.iron_ore", "block.minecraft.deepslate_iron_ore" ->
+                    player.giveExperiencePoints(VanillaOverhaulModCommonConfigs.IRON_ORE_EXP.get());
+            case "block.minecraft.gold_ore", "block.minecraft.deepslate_gold_ore" ->
+                    player.giveExperiencePoints(VanillaOverhaulModCommonConfigs.GOLD_ORE_EXP.get());
+            case "block.minecraft.lapis_ore", "block.minecraft.deepslate_lapis_ore" ->
+                    player.giveExperiencePoints(VanillaOverhaulModCommonConfigs.LAPIS_ORE_EXP.get());
+            case "block.minecraft.emerald_ore", "block.minecraft.deepslate_emerald_ore" ->
+                    player.giveExperiencePoints(VanillaOverhaulModCommonConfigs.EMERALD_ORE_EXP.get());
+            case "block.minecraft.redstone_ore", "block.minecraft.deepslate_redstone_ore" ->
+                    player.giveExperiencePoints(VanillaOverhaulModCommonConfigs.REDSTONE_ORE_EXP.get());
+            case "block.minecraft.diamond_ore", "block.minecraft.deepslate_diamond_ore" ->
+                    player.giveExperiencePoints(VanillaOverhaulModCommonConfigs.DIAMOND_ORE_EXP.get());
+            case "block.minecraft.nether_gold_ore" ->
+                    player.giveExperiencePoints(VanillaOverhaulModCommonConfigs.NETHER_GOLD_EXP.get());
+            case "block.minecraft.nether_quartz_ore" ->
+                    player.giveExperiencePoints(VanillaOverhaulModCommonConfigs.QUARTZ_ORE_EXP.get());
+            case "block.minecraft.ancient_debris" ->
+                    player.giveExperiencePoints(VanillaOverhaulModCommonConfigs.ANCIENT_DEBRIS_EXP.get());
         }
     }
 
