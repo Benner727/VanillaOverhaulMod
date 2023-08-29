@@ -1,35 +1,2222 @@
 {
   "villager_trades": [
     {
-      "profession": "librarian",
+      "profession": "butcher",
       "level": 1,
       "trades": [
         {
           "type": "ItemsForItems",
           "values": {
-            "give": "iron_ore",
-            "give_amount": 5,
-            "take": "iron_ingot",
+            "give": "beef",
+            "give_amount": 1,
+            "take": "bone_meal",
             "take_amount": 3
           }
         },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "mutton",
+            "give_amount": 1,
+            "take": "wheat",
+            "take_amount": 6
+          }
+        }
+      ]
+    },
+    {
+      "profession": "butcher",
+      "level": 2,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "pork",
+            "give_amount": 3,
+            "take": "barrel",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "butcher",
+      "level": 3,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "beef",
+            "give_amount": 24,
+            "take": "dirt",
+            "take_amount": 64
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "chicken",
+            "give_amount": 24,
+            "take": "gravel",
+            "take_amount": 32
+          }
+        }
+      ]
+    },
+    {
+      "profession": "butcher",
+      "level": 4,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "pork",
+            "give_amount": 24,
+            "take": "mud",
+            "take_amount": 32
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "mutton",
+            "give_amount": 24,
+            "take": "podzol",
+            "take_amount": 32
+          }
+        }
+      ]
+    },
+    {
+      "profession": "butcher",
+      "level": 5,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "beef",
+            "give_amount": 64,
+            "take": "emerald",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "pork",
+            "give_amount": 64,
+            "take": "emerald",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "mutton",
+            "give_amount": 64,
+            "take": "emerald",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "chicken",
+            "give_amount": 64,
+            "take": "emerald",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "cartographer",
+      "level": 1,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "cod",
+            "give_amount": 1,
+            "take": "compass",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "salmon",
+            "give_amount": 1,
+            "take": "clock",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "pufferfish",
+            "give_amount": 1,
+            "take": "map",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "cartographer",
+      "level": 2,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "cod",
+            "give_amount": 3,
+            "take": "lantern",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "salmon",
+            "give_amount": 2,
+            "take": "item_frame",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "cartographer",
+      "level": 3,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "cod",
+            "give_amount": 16,
+            "take": "sand",
+            "take_amount": 64
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "salmon",
+            "give_amount": 16,
+            "take": "red_sand",
+            "take_amount": 64
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "sand",
+            "give_amount": 64,
+            "take": "dirt",
+            "take_amount": 56
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "dirt",
+            "give_amount": 56,
+            "take": "sand",
+            "take_amount": 64
+          }
+        }
+      ]
+    },
+    {
+      "profession": "cartographer",
+      "level": 4,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "cod",
+            "give_amount": 12,
+            "take": "prismarine_shard",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "salmon",
+            "give_amount": 12,
+            "take": "prismarine_crystals",
+            "take_amount": 16
+          }
+        }
+      ]
+    },
+    {
+      "profession": "cartographer",
+      "level": 5,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "tropical_fish",
+            "give_amount": 1,
+            "take": "emerald",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "cleric",
+      "level": 1,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 3,
+            "take": "glass_bottle",
+            "take_amount": 3
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 2,
+            "take": "rabbit_foot",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "cleric",
+      "level": 2,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 24,
+            "take": "redstone_dust",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 32,
+            "take": "glowstone_dust",
+            "take_amount": 16
+          }
+        }
+      ]
+    },
+    {
+      "profession": "cleric",
+      "level": 3,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 48,
+            "take": "white_stained_glass",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 48,
+            "take": "orange_stained_glass",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 48,
+            "take": "magenta_stained_glass",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 48,
+            "take": "light_blue_stained_glass",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 48,
+            "take": "yellow_stained_glass",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 48,
+            "take": "lime_stained_glass",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 48,
+            "take": "pink_stained_glass",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 48,
+            "take": "gray_stained_glass",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 48,
+            "take": "light_gray_stained_glass",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 48,
+            "take": "cyan_stained_glass",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 48,
+            "take": "purple_stained_glass",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 48,
+            "take": "blue_stained_glass",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 48,
+            "take": "brown_stained_glass",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 48,
+            "take": "green_stained_glass",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 48,
+            "take": "red_stained_glass",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 48,
+            "take": "black_stained_glass",
+            "take_amount": 16
+          }
+        }
+      ]
+    },
+    {
+      "profession": "cleric",
+      "level": 4,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 56,
+            "take": "terracotta",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 56,
+            "take": "quartz_block",
+            "take_amount": 16
+          }
+        }
+      ]
+    },
+    {
+      "profession": "cleric",
+      "level": 5,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "rotten_flesh",
+            "give_amount": 64,
+            "take": "emerald",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "farmer",
+      "level": 1,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 1,
+            "take": "bread",
+            "take_amount": 6
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 3,
+            "take": "cookie",
+            "take_amount": 12
+          }
+        }
+      ]
+    },
+    {
+      "profession": "farmer",
+      "level": 2,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 1,
+            "take": "cake",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 1,
+            "take": "pumpkin_pie",
+            "take_amount": 2
+          }
+        }
+      ]
+    },
+    {
+      "profession": "farmer",
+      "level": 3,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 1,
+            "take": "apple",
+            "take_amount": 4
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 3,
+            "take": "mushroom_stew",
+            "take_amount": 3
+          }
+        }
+      ]
+    },
+    {
+      "profession": "farmer",
+      "level": 4,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 6,
+            "take": "glistering_melon_slice",
+            "take_amount": 2
+          }
+        }
+      ]
+    },
+    {
+      "profession": "farmer",
+      "level": 5,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 8,
+            "take": "golden_carrot",
+            "take_amount": 3
+          }
+        }
+      ]
+    },
+    {
+      "profession": "fisherman",
+      "level": 1,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "string",
+            "give_amount": 16,
+            "take": "cod",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "string",
+            "give_amount": 24,
+            "take": "salmon",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "string",
+            "give_amount": 40,
+            "take": "pufferfish",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "fisherman",
+      "level": 2,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "string",
+            "give_amount": 16,
+            "take": "fishing_rod",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "string",
+            "give_amount": 32,
+            "take": "campfire",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "fisherman",
+      "level": 3,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "string",
+            "give_amount": 24,
+            "take": "bamboo_raft",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "string",
+            "give_amount": 48,
+            "take": "water_bucket",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "fisherman",
+      "level": 4,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "string",
+            "give_amount": 64,
+            "take": "dried_kelp_block",
+            "take_amount": 16
+          }
+        }
+      ]
+    },
+    {
+      "profession": "fisherman",
+      "level": 5,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "string",
+            "give_amount": 64,
+            "take": "emerald",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "fletcher",
+      "level": 1,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 1,
+            "take": "stick",
+            "take_amount": 4
+          }
+        }
+      ]
+    },
+    {
+      "profession": "fletcher",
+      "level": 2,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 12,
+            "take": "arrow",
+            "take_amount": 32
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 32,
+            "take": "ladder",
+            "take_amount": 16
+          }
+        }
+      ]
+    },
+    {
+      "profession": "fletcher",
+      "level": 3,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "charcoal",
+            "take_amount": 8
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 8,
+            "take": "tripwire_hook",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "fletcher",
+      "level": 4,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "oak_planks",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "spruce_planks",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "birch_planks",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "jungle_planks",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "acacia_planks",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "dark_oak_planks",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "mangrove_planks",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "cherry_planks",
+            "take_amount": 16
+          }
+        }
+      ]
+    },
+    {
+      "profession": "fletcher",
+      "level": 5,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "oak_log",
+            "take_amount": 8
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "spruce_log",
+            "take_amount": 8
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "birch_log",
+            "take_amount": 8
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "jungle_log",
+            "take_amount": 8
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "acacia_log",
+            "take_amount": 8
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "dark_oak_log",
+            "take_amount": 8
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "mangrove_log",
+            "take_amount": 8
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "feather",
+            "give_amount": 64,
+            "take": "cherry_log",
+            "take_amount": 8
+          }
+        }
+      ]
+    },
+    {
+      "profession": "leatherworker",
+      "level": 1,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "leather",
+            "give_amount": 24,
+            "take": "saddle",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "leatherworker",
+      "level": 2,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "leather",
+            "give_amount": 32,
+            "take": "lead",
+            "take_amount": 2
+          }
+        }
+      ]
+    },
+    {
+      "profession": "leatherworker",
+      "level": 3,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "leather",
+            "give_amount": 48,
+            "take": "name_tag",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "leatherworker",
+      "level": 4,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "leather",
+            "give_amount": 48,
+            "take": "leather_horse_armor",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "leather",
+            "give_amount": 64,
+            "take": "iron_horse_armor",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "leatherworker",
+      "level": 5,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "leather",
+            "give_amount": 64,
+            "take": "emerald",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "shepherd",
+      "level": 1,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 16,
+            "take": "white_bed",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 32,
+            "take": "shears",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "shepherd",
+      "level": 2,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "white_wool",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "orange_wool",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "magenta_wool",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "light_blue_wool",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "yellow_wool",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "lime_wool",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "pink_wool",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "gray_wool",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "light_gray_wool",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "cyan_wool",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "purple_wool",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "blue_wool",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "brown_wool",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "green_wool",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "red_wool",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "black_wool",
+            "take_amount": 16
+          }
+        }
+      ]
+    },
+    {
+      "profession": "shepherd",
+      "level": 3,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "white_dye",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "orange_dye",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "magenta_dye",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "light_blue_dye",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "yellow_dye",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "lime_dye",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "pink_dye",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "gray_dye",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "light_gray_dye",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "cyan_dye",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "purple_dye",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "blue_dye",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "brown_dye",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "green_dye",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "red_dye",
+            "take_amount": 16
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "black_dye",
+            "take_amount": 16
+          }
+        }
+      ]
+    },
+    {
+      "profession": "shepherd",
+      "level": 4,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 24,
+            "take": "white_banner",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "shepherd",
+      "level": 5,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "wheat",
+            "give_amount": 64,
+            "take": "emerald",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "stone_mason",
+      "level": 1,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "smooth_stone",
+            "give_amount": 64,
+            "take": "andesite",
+            "take_amount": 64
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "smooth_stone",
+            "give_amount": 64,
+            "take": "diorite",
+            "take_amount": 64
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "smooth_stone",
+            "give_amount": 64,
+            "take": "granite",
+            "take_amount": 64
+          }
+        }
+      ]
+    },
+    {
+      "profession": "stone_mason",
+      "level": 2,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "smooth_stone",
+            "give_amount": 64,
+            "take": "bricks",
+            "take_amount": 64
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "cobblestone",
+            "give_amount": 64,
+            "take": "cobbled_deepslate",
+            "take_amount": 56
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "cobbled_deepslate",
+            "give_amount": 64,
+            "take": "cobblestone",
+            "take_amount": 56
+          }
+        }
+      ]
+    },
+    {
+      "profession": "stone_mason",
+      "level": 3,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "andesite",
+            "give_amount": 64,
+            "take": "diorite",
+            "take_amount": 56
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "andesite",
+            "give_amount": 64,
+            "take": "granite",
+            "take_amount": 56
+          }
+        }
+      ]
+    },
+    {
+      "profession": "stone_mason",
+      "level": 4,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "diorite",
+            "give_amount": 64,
+            "take": "andesite",
+            "take_amount": 56
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "diorite",
+            "give_amount": 64,
+            "take": "granite",
+            "take_amount": 56
+          }
+        }
+      ]
+    },
+    {
+      "profession": "stone_mason",
+      "level": 5,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "granite",
+            "give_amount": 64,
+            "take": "andesite",
+            "take_amount": 56
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "granite",
+            "give_amount": 64,
+            "take": "diorite",
+            "take_amount": 56
+          }
+        }
+      ]
+    },
+    {
+      "profession": "armorer",
+      "level": 1,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 2,
+            "take": "shield",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "EnchantedItemForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 4,
+            "take": "golden_boots"
+          }
+        },
+        {
+          "type": "EnchantedItemForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 5,
+            "take": "golden_helmet"
+          }
+        }
+      ]
+    },
+    {
+      "profession": "armorer",
+      "level": 2,
+      "trades": [
+        {
+          "type": "EnchantedItemForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 6,
+            "take": "golden_leggings"
+          }
+        },
+        {
+          "type": "EnchantedItemForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 7,
+            "take": "golden_chestplate"
+          }
+        }
+      ]
+    },
+    {
+      "profession": "armorer",
+      "level": 3,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 5,
+            "take": "iron_boots",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 6,
+            "take": "iron_helmet",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "armorer",
+      "level": 4,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 7,
+            "take": "iron_leggings",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 8,
+            "take": "iron_chestplate",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "armorer",
+      "level": 5,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 16,
+            "take": "lava_bucket",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "EnchantBookForLapis",
+          "values": {
+            "name": "protection",
+            "level": 4
+          }
+        }
+      ]
+    },
+    {
+      "profession": "weaponsmith",
+      "level": 1,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 3,
+            "take": "bucket",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "EnchantedItemForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 4,
+            "take": "golden_hoe"
+          }
+        },
+        {
+          "type": "EnchantedItemForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 5,
+            "take": "golden_shovel"
+          }
+        }
+      ]
+    },
+    {
+      "profession": "weaponsmith",
+      "level": 2,
+      "trades": [
+        {
+          "type": "EnchantedItemForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 6,
+            "take": "golden_pickaxe"
+          }
+        },
+        {
+          "type": "EnchantedItemForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 7,
+            "take": "golden_axe"
+          }
+        }
+      ]
+    },
+    {
+      "profession": "weaponsmith",
+      "level": 3,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 1,
+            "take": "iron_hoe",
+            "take_amount": 5
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 5,
+            "take": "iron_shovel",
+            "take_amount": 6
+          }
+        }
+      ]
+    },
+    {
+      "profession": "weaponsmith",
+      "level": 4,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 1,
+            "take": "iron_pickaxe",
+            "take_amount": 7
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 5,
+            "take": "iron_axe",
+            "take_amount": 8
+          }
+        }
+      ]
+    },
+    {
+      "profession": "weaponsmith",
+      "level": 5,
+      "trades": [
         {
           "type": "EnchantBookForLapis",
           "values": {
             "name": "efficiency",
             "level": 5
           }
+        }
+      ]
+    },
+    {
+      "profession": "weaponsmith",
+      "level": 1,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 16,
+            "take": "bell",
+            "take_amount": 1
+          }
         },
         {
-          "type": "RandomEnchantBookForLapis",
-          "values": {}
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 2,
+            "take": "bow",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 3,
+            "take": "crossbow",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "weaponsmith",
+      "level": 2,
+      "trades": [
+        {
+          "type": "EnchantedItemForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 6,
+            "take": "golden_sword"
+          }
         },
         {
           "type": "EnchantedItemForItems",
           "values": {
-            "give": "iron_ingot",
+            "give": "emerald",
+            "give_amount": 7,
+            "take": "golden_axe"
+          }
+        }
+      ]
+    },
+    {
+      "profession": "weaponsmith",
+      "level": 3,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 1,
+            "take": "iron_sword",
+            "take_amount": 6
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 5,
+            "take": "iron_axe",
+            "take_amount": 8
+          }
+        }
+      ]
+    },
+    {
+      "profession": "weaponsmith",
+      "level": 4,
+      "trades": [
+        {
+          "type": "EnchantBookForLapis",
+          "values": {
+            "name": "bane_of_arthropods",
+            "level": 5
+          }
+        },
+        {
+          "type": "EnchantBookForLapis",
+          "values": {
+            "name": "smite",
+            "level": 5
+          }
+        }
+      ]
+    },
+    {
+      "profession": "weaponsmith",
+      "level": 5,
+      "trades": [
+        {
+          "type": "EnchantBookForLapis",
+          "values": {
+            "name": "sharpness",
+            "level": 5
+          }
+        }
+      ]
+    },
+    {
+      "profession": "librarian",
+      "level": 1,
+      "trades": [
+        {
+          "type": "RandomEnchantBookForLapis",
+          "values": {
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 5,
+            "take": "paper",
+            "take_amount": 24
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 9,
+            "take": "bookshelf",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "librarian",
+      "level": 2,
+      "trades": [
+        {
+          "type": "RandomEnchantBookForLapis",
+          "values": {
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
             "give_amount": 3,
-            "take": "golden_pickaxe"
+            "take": "book",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 2,
+            "take": "candle",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "librarian",
+      "level": 3,
+      "trades": [
+        {
+          "type": "RandomEnchantBookForLapis",
+          "values": {
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 1,
+            "take": "ink_sac",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 5,
+            "take": "painting",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "librarian",
+      "level": 4,
+      "trades": [
+        {
+          "type": "RandomEnchantBookForLapis",
+          "values": {
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 2,
+            "take": "writable_book",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 12,
+            "take": "glass",
+            "take_amount": 32
+          }
+        }
+      ]
+    },
+    {
+      "profession": "librarian",
+      "level": 5,
+      "trades": [
+        {
+          "type": "RandomEnchantBookForLapis",
+          "values": {
+          }
+        }
+      ]
+    },
+    {
+      "profession": "wandering_trader",
+      "level": 1,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 5,
+            "take": "oak_sapling",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 5,
+            "take": "spruce_sapling",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 5,
+            "take": "birch_sapling",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 5,
+            "take": "jungle_sapling",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 5,
+            "take": "acacia_sapling",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 5,
+            "take": "dark_oak_sapling",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 5,
+            "take": "mangrove_sapling",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 5,
+            "take": "cherry_sapling",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 1,
+            "take": "melon_seeds",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 1,
+            "take": "pumpkin_seeds",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 1,
+            "take": "vine",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 3,
+            "take": "bamboo",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 3,
+            "take": "cactus",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 1,
+            "take": "moss_block",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 12,
+            "take": "sponge",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 3,
+            "take": "slime_ball",
+            "take_amount": 3
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 9,
+            "take": "honey_block",
+            "take_amount": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "wandering_trader",
+      "level": 2,
+      "trades": [
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 16,
+            "take": "golden_apple",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "EnchantedItemForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 32,
+            "take": "diamond_pickaxe"
+          }
+        },
+        {
+          "type": "EnchantedItemForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 32,
+            "take": "diamond_shovel"
+          }
+        },
+        {
+          "type": "EnchantedItemForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 32,
+            "take": "diamond_axe"
+          }
+        },
+        {
+          "type": "EnchantedItemForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 32,
+            "take": "diamond_hoe"
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 24,
+            "take": "packed_ice",
+            "take_amount": 64
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 10,
+            "take": "echo_shard",
+            "take_amount": 1
+          }
+        },
+        {
+          "type": "ItemsForItems",
+          "values": {
+            "give": "emerald",
+            "give_amount": 8,
+            "take": "ender_eye",
+            "take_amount": 1
           }
         }
       ]

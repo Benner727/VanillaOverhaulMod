@@ -38,14 +38,14 @@ public class ModEvents {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
             for (int i = 1; i <= 5; i++) {
-                replaceVillagerTrades(VillagerProfession.LIBRARIAN.toString(), i, trades);
+                replaceVillagerTrades(event.getType().toString(), i, trades);
             }
         }
 
         private static void replaceVillagerTrades(String profession, int villagerLevel, Int2ObjectMap<List<VillagerTrades.ItemListing>> trades) {
             ArrayList<VillageTradesResource.Trade> new_trades = VillagerTradesManager.getTrades(profession, villagerLevel);
 
-            if (new_trades.size() > 0 && VanillaOverhaulModCommonConfigs.REPLACE_VILLAGER_TRADES.get()) {
+            if (!new_trades.isEmpty() && VanillaOverhaulModCommonConfigs.REPLACE_VILLAGER_TRADES.get()) {
                 trades.get(villagerLevel).clear();
             }
 
@@ -71,12 +71,32 @@ public class ModEvents {
             List<VillagerTrades.ItemListing> generic = event.getGenericTrades();
             List<VillagerTrades.ItemListing> rare = event.getRareTrades();
 
-            generic.clear();
+            replaceWanderingVillagerTrades(1, generic);
+            replaceWanderingVillagerTrades(2, rare);
+        }
 
-            ItemStack stack = new ItemStack(Items.ACACIA_DOOR, 1);
-            generic.add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 2),
-                    stack, 10, 8, 0.02F));
+        private static void replaceWanderingVillagerTrades(int villagerLevel, List<VillagerTrades.ItemListing> trades) {
+            ArrayList<VillageTradesResource.Trade> new_trades = VillagerTradesManager.getTrades("wandering_trader", villagerLevel);
+
+            if (!new_trades.isEmpty() && VanillaOverhaulModCommonConfigs.REPLACE_VILLAGER_TRADES.get()) {
+                trades.clear();
+            }
+
+            for (VillageTradesResource.Trade trade : new_trades) {
+                if (trade.type.equals("ItemsForItems")) {
+                    trades.add(new ModVillagerTrades.ItemsForItems(
+                            trade.values.give, trade.values.giveAmount, trade.values.take, trade.values.takeAmount));
+                }
+                else if (trade.type.equals("EnchantBookForLapis")) {
+                    trades.add(new ModVillagerTrades.EnchantBookForLapis(trade.values.name, trade.values.level));
+                }
+                else if (trade.type.equals("RandomEnchantBookForLapis")) {
+                    trades.add(new ModVillagerTrades.RandomEnchantBookForLapis());
+                }
+                else if (trade.type.equals("EnchantedItemForItems")) {
+                    trades.add(new ModVillagerTrades.EnchantedItemForItems(trade.values.give, trade.values.giveAmount, trade.values.take));
+                }
+            }
         }
 
         @SubscribeEvent

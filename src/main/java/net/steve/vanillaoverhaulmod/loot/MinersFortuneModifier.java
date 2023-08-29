@@ -19,6 +19,8 @@ import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.common.loot.LootModifier;
 
 import org.jetbrains.annotations.NotNull;
+
+import java.util.List;
 import java.util.function.Supplier;
 
 public class MinersFortuneModifier extends LootModifier {
@@ -59,15 +61,37 @@ public class MinersFortuneModifier extends LootModifier {
     private boolean isFortunable(BlockState block) {
         String blockName = block.getBlock().asItem().getDescriptionId();
 
-        System.out.println(blockName);
+        String[] fortuneList = {
+                "block.minecraft.coal_ore",
+                "block.minecraft.diamond_ore",
+                "block.minecraft.emerald_ore",
+                "block.minecraft.iron_ore",
+                "block.minecraft.copper_ore",
+                "block.minecraft.lapis_ore",
+                "block.minecraft.redstone_ore",
+                "block.minecraft.deepslate_coal_ore",
+                "block.minecraft.deepslate_diamond_ore",
+                "block.minecraft.deepslate_emerald_ore",
+                "block.minecraft.deepslate_iron_ore",
+                "block.minecraft.deepslate_copper_ore",
+                "block.minecraft.deepslate_lapis_ore",
+                "block.minecraft.deepslate_redstone_ore",
+                "block.minecraft.amethyst_cluster",
+                "block.minecraft.nether_gold_ore_ore",
+                "block.minecraft.nether_quartz_ore"
+        };
 
-        return true;
+        for (String item : fortuneList) {
+            if (blockName.equals(item)) return true;
+        }
+
+        return false;
     }
 
     private int getLootModifier(int playerLevel, float lootRoll) {
         int lootModifier = 1;
 
-        int fortuneLevel = Math.floorDiv(Math.max(playerLevel, 100), 20);
+        int fortuneLevel = Math.floorDiv(Math.min(playerLevel, 100), 20);
         switch (fortuneLevel) {
             case 1 -> lootModifier = getFortuneOneModifier(lootRoll);
             case 2 -> lootModifier = getFortuneTwoModifier(lootRoll);

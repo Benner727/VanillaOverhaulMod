@@ -51,7 +51,7 @@ public class ModVillagerTrades {
             this.takeItemStack = pTakeItemStack;
             this.takeAmount = pTakeAmount;
             this.maxUses = pMaxUses;
-            this.villagerXp = 0;
+            this.villagerXp = 5;
             this.priceMultiplier = 0.05F;
         }
 
@@ -64,7 +64,7 @@ public class ModVillagerTrades {
         private final int villagerXp;
 
         public RandomEnchantBookForLapis() {
-            this.villagerXp = 0;
+            this.villagerXp = 10;
         }
 
         public MerchantOffer getOffer(Entity pTrader, RandomSource pRandom) {
@@ -93,7 +93,7 @@ public class ModVillagerTrades {
         public EnchantBookForLapis(String pEnchantName, int pLevel) {
             this.enchantName = pEnchantName;
             this.level = pLevel;
-            this.villagerXp = 0;
+            this.villagerXp = 30;
         }
 
 
@@ -128,7 +128,7 @@ public class ModVillagerTrades {
         }
 
         public EnchantedItemForItems(Item pGiveItem, int pGiveAmount, Item pTakeItem) {
-            this(new ItemStack(pGiveItem), pGiveAmount, new ItemStack(pTakeItem), 12);
+            this(new ItemStack(pGiveItem), pGiveAmount, new ItemStack(pTakeItem), 1);
         }
 
         public EnchantedItemForItems(ItemStack pGiveItemStack, int pGiveAmount, ItemStack pTakeItemStack, int pMaxUses) {
@@ -136,7 +136,7 @@ public class ModVillagerTrades {
             this.giveAmount = pGiveAmount;
             this.takeItemStack = pTakeItemStack;
             this.maxUses = pMaxUses;
-            this.villagerXp = 0;;
+            this.villagerXp = 15;;
             this.priceMultiplier = 0.05F;
         }
 
