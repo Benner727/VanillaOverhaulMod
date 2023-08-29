@@ -11,6 +11,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.EnchantmentInstance;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.ItemLike;
@@ -111,6 +112,39 @@ public class ModVillagerTrades {
             }
 
             return new MerchantOffer(new ItemStack(Items.LAPIS_LAZULI, j), new ItemStack(Items.BOOK), itemstack, 12, this.villagerXp, 0.2F);
+        }
+    }
+
+   public static class EnchantedItemForItems implements VillagerTrades.ItemListing {
+        private final ItemStack giveItemStack;
+        private final int giveAmount;
+        private final ItemStack takeItemStack;
+        private final int maxUses;
+        private final int villagerXp;
+        private final float priceMultiplier;
+
+        public EnchantedItemForItems(String pGiveItem, int pGiveAmount, String pTakeItem) {
+            this(ForgeRegistries.ITEMS.getValue(new ResourceLocation("minecraft", pGiveItem)), pGiveAmount, ForgeRegistries.ITEMS.getValue(new ResourceLocation("minecraft", pTakeItem)));
+        }
+
+        public EnchantedItemForItems(Item pGiveItem, int pGiveAmount, Item pTakeItem) {
+            this(new ItemStack(pGiveItem), pGiveAmount, new ItemStack(pTakeItem), 12);
+        }
+
+        public EnchantedItemForItems(ItemStack pGiveItemStack, int pGiveAmount, ItemStack pTakeItemStack, int pMaxUses) {
+            this.giveItemStack = pGiveItemStack;
+            this.giveAmount = pGiveAmount;
+            this.takeItemStack = pTakeItemStack;
+            this.maxUses = pMaxUses;
+            this.villagerXp = 0;;
+            this.priceMultiplier = 0.05F;
+        }
+
+        public MerchantOffer getOffer(Entity pTrader, RandomSource pRandom) {
+            int i = 5 + pRandom.nextInt(15);
+            ItemStack itemstack = EnchantmentHelper.enchantItem(pRandom, new ItemStack(this.takeItemStack.getItem()), i, false);
+            int j = Math.min(this.giveAmount + i, 64);
+            return new MerchantOffer(new ItemStack(this.giveItemStack.getItem(), j), itemstack, this.maxUses, this.villagerXp, this.priceMultiplier);
         }
     }
 }

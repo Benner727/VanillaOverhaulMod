@@ -23,6 +23,14 @@
         {
           "type": "RandomEnchantBookForLapis",
           "values": {}
+        },
+        {
+          "type": "EnchantedItemForItems",
+          "values": {
+            "give": "iron_ingot",
+            "give_amount": 3,
+            "take": "golden_pickaxe"
+          }
         }
       ]
     }

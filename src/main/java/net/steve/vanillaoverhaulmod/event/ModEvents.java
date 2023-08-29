@@ -35,17 +35,15 @@ public class ModEvents {
     public static class ForgeEvents {
         @SubscribeEvent
         public static void addCustomVillagerTrades(VillagerTradesEvent event) {
-            if (event.getType() == VillagerProfession.LIBRARIAN) {
-                Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
-                for (int i = 1; i <= 5; i++) {
-                    replaceVillagerTrades("librarian", i, trades);
-                }
+            for (int i = 1; i <= 5; i++) {
+                replaceVillagerTrades(VillagerProfession.LIBRARIAN.toString(), i, trades);
             }
         }
 
         private static void replaceVillagerTrades(String profession, int villagerLevel, Int2ObjectMap<List<VillagerTrades.ItemListing>> trades) {
-            ArrayList<VillageTradesResource.Trade> new_trades = VillagerTradesManager.getTrades("librarian", villagerLevel);
+            ArrayList<VillageTradesResource.Trade> new_trades = VillagerTradesManager.getTrades(profession, villagerLevel);
 
             if (new_trades.size() > 0 && VanillaOverhaulModCommonConfigs.REPLACE_VILLAGER_TRADES.get()) {
                 trades.get(villagerLevel).clear();
@@ -60,8 +58,10 @@ public class ModEvents {
                     trades.get(villagerLevel).add(new ModVillagerTrades.EnchantBookForLapis(trade.values.name, trade.values.level));
                 }
                 else if (trade.type.equals("RandomEnchantBookForLapis")) {
-                    System.out.println("RandomEnchantBookForLapis");
                     trades.get(villagerLevel).add(new ModVillagerTrades.RandomEnchantBookForLapis());
+                }
+                else if (trade.type.equals("EnchantedItemForItems")) {
+                    trades.get(villagerLevel).add(new ModVillagerTrades.EnchantedItemForItems(trade.values.give, trade.values.giveAmount, trade.values.take));
                 }
             }
         }

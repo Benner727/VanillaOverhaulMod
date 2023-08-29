@@ -28,7 +28,7 @@ public class VanillaOverhaulModCommonConfigs {
         // HERE DEFINE YOUR CONFIGS
         REPLACE_VILLAGER_TRADES = BUILDER.comment("If True, Replace existing trades. If False, Add on to existing trades.").define("Replace Villager Trades", Boolean.TRUE);
 
-        STONE_EXP = BUILDER.define("Stone Exp", 0);
+        STONE_EXP = BUILDER.comment("Exp for mining different materials.").define("Stone Exp", 0);
         DEEPSLATE_EXP = BUILDER.define("Deepslate Exp", 1);
         COAL_ORE_EXP = BUILDER.define("Coal Ore Exp", 2);
         COPPER_ORE_EXP = BUILDER.define("Copper Ore Exp", 2);

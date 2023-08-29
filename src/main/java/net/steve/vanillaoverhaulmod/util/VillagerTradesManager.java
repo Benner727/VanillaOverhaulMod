@@ -64,6 +64,13 @@ public class VillagerTradesManager extends SimpleJsonResourceReloadListener {
                                     values.get("give_amount").getAsInt(),
                                     values.get("take").getAsString(),
                                     values.get("take_amount").getAsInt()));
+                        } else if (trade_jo.get("type").getAsString().equals("EnchantedItemForItems")) {
+                            tempVillagerTrade.trades.add(new VillageTradesResource().new Trade(
+                                    trade_jo.get("type").getAsString(),
+                                    values.get("give").getAsString(),
+                                    values.get("give_amount").getAsInt(),
+                                    values.get("take").getAsString(),
+                                   1));
                         } else if (trade_jo.get("type").getAsString().equals("RandomEnchantBookForLapis")) {
                             tempVillagerTrade.trades.add(new VillageTradesResource().new Trade(trade_jo.get("type").getAsString()));
                         }
