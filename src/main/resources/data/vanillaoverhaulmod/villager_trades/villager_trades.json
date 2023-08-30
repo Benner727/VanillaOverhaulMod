@@ -2051,7 +2051,7 @@
           "values": {
             "give": "emerald",
             "give_amount": 5,
-            "take": "mangrove_sapling",
+            "take": "mangrove_propagule",
             "take_amount": 1
           }
         },

@@ -1,0 +1,8 @@
+site_name: Vanilla Overhaul Mod
+
+theme:
+    name: dracula
+    
+nav:
+  - Home: index.md
+  - Villager Trades: villager-trades.md
