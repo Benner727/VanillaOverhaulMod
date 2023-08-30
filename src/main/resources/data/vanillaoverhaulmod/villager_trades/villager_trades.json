@@ -31,7 +31,7 @@
         {
           "type": "ItemsForItems",
           "values": {
-            "give": "pork",
+            "give": "porkchop",
             "give_amount": 3,
             "take": "barrel",
             "take_amount": 1
@@ -49,7 +49,7 @@
             "give": "beef",
             "give_amount": 24,
             "take": "dirt",
-            "take_amount": 64
+            "take_amount": 32
           }
         },
         {
@@ -70,7 +70,7 @@
         {
           "type": "ItemsForItems",
           "values": {
-            "give": "pork",
+            "give": "porkchop",
             "give_amount": 24,
             "take": "mud",
             "take_amount": 32
@@ -103,7 +103,7 @@
         {
           "type": "ItemsForItems",
           "values": {
-            "give": "pork",
+            "give": "porkchop",
             "give_amount": 64,
             "take": "emerald",
             "take_amount": 1
