@@ -1,32 +1,32 @@
-#Villager Trades
+# Villager Trades
 
-##Armorer
+## Armorer
 
-####Novice
+#### Novice
 Item Wanted | Quantity | Item Given | Quantity
 :-----------:|:-------------:|:-----------:|:-----------:
 Coal | 15 | Emerald | 1
 ![](img/item/emerald.png)Emerald | 5 | ![](img/item/iron_helmet.png)Iron Helmet | 1
 
-####Apprentice
+#### Apprentice
 Item Wanted | Quantity | Item Given | Quantity
 :-----------:|:-------------:|:-----------:|:-----------:
 Coal | 15 | Emerald | 1
 Emerald | 5 | Iron Helmet | 1
 
-####Journeyman
+#### Journeyman
 Item Wanted | Quantity | Item Given | Quantity
 :-----------:|:-------------:|:-----------:|:-----------:
 Coal | 15 | Emerald | 1
 Emerald | 5 | Iron Helmet | 1
 
-####Expert
+#### Expert
 Item Wanted | Quantity | Item Given | Quantity
 :-----------:|:-------------:|:-----------:|:-----------:
 Coal | 15 | Emerald | 1
 Emerald | 5 | Iron Helmet | 1
 
-####Master
+#### Master
 Item Wanted | Quantity | Item Given | Quantity
 :-----------:|:-------------:|:-----------:|:-----------:
 Coal | 15 | Emerald | 1
